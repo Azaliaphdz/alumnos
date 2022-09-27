@@ -8,12 +8,31 @@
 
 import UIKit
 
-class DetallesAlumnoController : UIViewController {
+class DetallesAlumnoController : UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (alumno?.materias.count)!
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaMateria") as! CeldaMateriaController
+        
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+      
+    
+
+    
     
     @IBOutlet weak var lblEdad: UILabel!
     @IBOutlet weak var lblMatricula: UILabel!
     @IBOutlet weak var lblCarrera: UILabel!
     var alumno : Alumno?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

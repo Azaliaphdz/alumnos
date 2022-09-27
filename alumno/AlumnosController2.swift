@@ -46,6 +46,10 @@ class AlumnosController2: UIViewController, UITableViewDelegate, UITableViewData
         alumnos.append(Alumno (nombre: "Emiliano", matricula: "101500", carrera: "Ing. Produccion Multi", edad: 30))
         alumnos.append(Alumno (nombre: "Danna", matricula: "199560", carrera: "Ing. Produccion Multi", edad: 20))
         
+        alumnos[0].materias.append(Materias(codigo: "ABC1", materia: "Administración I"))
+        alumnos[0].materias.append(Materias(codigo: "ABC2", materia: "Administración II"))
+        alumnos[0].materias.append(Materias(codigo: "ABC3", materia: "Administración III"))
+        
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
