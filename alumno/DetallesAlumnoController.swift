@@ -10,6 +10,9 @@ import UIKit
 
 class DetallesAlumnoController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 82
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (alumno?.materias.count)!
@@ -17,15 +20,15 @@ class DetallesAlumnoController : UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tableView.dequeueReusableCell(withIdentifier: "celdaMateria") as! CeldaMateriaController
-        
+        celda.lblNombre.text = alumno!.materias[indexPath.row].nombre
+        celda.lblCodigo.text = alumno!.materias[indexPath.row].codigo
+        return celda
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
       
-    
-
     
     
     @IBOutlet weak var lblEdad: UILabel!

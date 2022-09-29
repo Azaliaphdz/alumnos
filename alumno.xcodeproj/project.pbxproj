@@ -18,7 +18,7 @@
 		3D5D85C128DCB634001957AE /* CeldaAlumnoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D85C028DCB634001957AE /* CeldaAlumnoController.swift */; };
 		3D5D85C328DCBC18001957AE /* Alumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D85C228DCBC18001957AE /* Alumno.swift */; };
 		3DD2449E28E341CD00FB5CE2 /* DetallesAlumnoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2449D28E341CD00FB5CE2 /* DetallesAlumnoController.swift */; };
-		3DD244A028E34E8E00FB5CE2 /* Materias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2449F28E34E8E00FB5CE2 /* Materias.swift */; };
+		3DD244A028E34E8E00FB5CE2 /* Materia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2449F28E34E8E00FB5CE2 /* Materia.swift */; };
 		3DD244A428E35BC800FB5CE2 /* CeldaMateriaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD244A328E35BC800FB5CE2 /* CeldaMateriaController.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +57,7 @@
 		3D5D85C028DCB634001957AE /* CeldaAlumnoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaAlumnoController.swift; sourceTree = "<group>"; };
 		3D5D85C228DCBC18001957AE /* Alumno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alumno.swift; sourceTree = "<group>"; };
 		3DD2449D28E341CD00FB5CE2 /* DetallesAlumnoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesAlumnoController.swift; sourceTree = "<group>"; };
-		3DD2449F28E34E8E00FB5CE2 /* Materias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materias.swift; sourceTree = "<group>"; };
+		3DD2449F28E34E8E00FB5CE2 /* Materia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materia.swift; sourceTree = "<group>"; };
 		3DD244A328E35BC800FB5CE2 /* CeldaMateriaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaMateriaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,7 +119,7 @@
 				3D5D85C028DCB634001957AE /* CeldaAlumnoController.swift */,
 				3D5D85C228DCBC18001957AE /* Alumno.swift */,
 				3DD2449D28E341CD00FB5CE2 /* DetallesAlumnoController.swift */,
-				3DD2449F28E34E8E00FB5CE2 /* Materias.swift */,
+				3DD2449F28E34E8E00FB5CE2 /* Materia.swift */,
 				3DD244A328E35BC800FB5CE2 /* CeldaMateriaController.swift */,
 			);
 			path = alumno;
@@ -278,7 +278,7 @@
 				3DD2449E28E341CD00FB5CE2 /* DetallesAlumnoController.swift in Sources */,
 				3D5D859128DCB19A001957AE /* AppDelegate.swift in Sources */,
 				3D5D85C328DCBC18001957AE /* Alumno.swift in Sources */,
-				3DD244A028E34E8E00FB5CE2 /* Materias.swift in Sources */,
+				3DD244A028E34E8E00FB5CE2 /* Materia.swift in Sources */,
 				3D5D859328DCB19A001957AE /* SceneDelegate.swift in Sources */,
 				3D5D85C128DCB634001957AE /* CeldaAlumnoController.swift in Sources */,
 				3DD244A428E35BC800FB5CE2 /* CeldaMateriaController.swift in Sources */,

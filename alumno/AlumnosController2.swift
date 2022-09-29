@@ -11,6 +11,9 @@ import UIKit
 class AlumnosController2: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var alumnos : [Alumno] = []
+    var materias1: [Materia] = []
+    var materias2: [Materia] = []
+    var materias3: [Materia] = []
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 105
@@ -35,20 +38,26 @@ class AlumnosController2: UIViewController, UITableViewDelegate, UITableViewData
     
 
     @IBOutlet weak var tvAlumnos: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-         alumnos.append(Alumno (nombre: "Azalia", matricula: "199229", carrera: "Ing. Produccion Multi", edad: 21))
-        alumnos.append(Alumno (nombre: "Marisela", matricula: "199419", carrera: "Ing. Produccion Multi", edad: 21))
-        alumnos.append(Alumno (nombre: "Alejandra", matricula: "209004", carrera: "Ing. Produccion Multi", edad: 21))
-        alumnos.append(Alumno (nombre: "Armando", matricula: "199186", carrera: "Ing. Produccion Multi", edad: 21))
-        alumnos.append(Alumno (nombre: "Emiliano", matricula: "101500", carrera: "Ing. Produccion Multi", edad: 30))
-        alumnos.append(Alumno (nombre: "Danna", matricula: "199560", carrera: "Ing. Produccion Multi", edad: 20))
+        materias1.append(Materia(nombre: "Cálculo", codigo: "123A"))
+        materias1.append(Materia(nombre: "Modelado 3D", codigo: "456B"))
+        materias1.append(Materia(nombre: "Diseño de personajes", codigo: "456B"))
+          
+        materias2.append(Materia(nombre: "Física", codigo: "789C"))
+        materias2.append(Materia(nombre: "Historia", codigo: "564D"))
+          
+        materias3.append(Materia(nombre: "Quimica", codigo: "445E"))
+        materias3.append(Materia(nombre: "Tratamiento", codigo: "965F"))
         
-        alumnos[0].materias.append(Materias(codigo: "ABC1", materia: "Administración I"))
-        alumnos[0].materias.append(Materias(codigo: "ABC2", materia: "Administración II"))
-        alumnos[0].materias.append(Materias(codigo: "ABC3", materia: "Administración III"))
+          ///
+        alumnos.append(Alumno(nombre: "Azalia", matricula: "199229", carrera: "IPM", edad: 21, materias: materias1))
+        alumnos.append(Alumno(nombre: "Marisela", matricula: "199419", carrera: "IPM", edad: 21, materias: materias2))
+        alumnos.append(Alumno(nombre: "Alejandra", matricula: "209004", carrera: "IPM", edad: 21, materias: materias3))
+          
         
     }
 

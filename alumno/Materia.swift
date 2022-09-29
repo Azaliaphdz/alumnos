@@ -8,13 +8,13 @@
 
 import UIKit
 
-class Materias {
+class Materia {
     
-    var materia : String
+    var nombre : String
     var codigo : String
     
     init(nombre: String, codigo: String){
-        self.materia = nombre
+        self.nombre = nombre
         self.codigo = codigo
     }
 }
